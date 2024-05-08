@@ -13,6 +13,9 @@ module.exports = (app) => {
 
     // Otras rutas existentes
     // ...
+     // Respuesta de los datos de mongo 
+     router.post('/tickets/estado', ticketController.handleMongoResponse);
+
 
     app.use('/', router);
 };
